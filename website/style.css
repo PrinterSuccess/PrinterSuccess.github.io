@@ -1,0 +1,122 @@
+@font-face {
+  font-family:"Roboto";
+  src: url("./fonts/Roboto/Roboto-Bold.ttf") format("truetype");
+}
+.option-card{
+    width: 90%;
+    border: none;
+
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin-top: 5vh;  
+    margin-left: auto;
+    margin-right: auto;
+    color: #FFFFFF;
+
+    background: #DE1918;
+}
+
+.info-card{
+    width: 90%;
+    border: none;
+
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin-top: 5vh;  
+    margin-left: auto;
+    margin-right: auto;
+    color: #FFFFFF;
+
+    background: #DE1918;
+}
+.option-card:active{
+    background-color: #D01414;
+}
+.title-card{
+    width: 90%;
+    height: 20vh;
+    border: none;
+
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5vh;
+    color: #FFFFFF;
+
+    background: #DE1918;
+}
+
+.option-text{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 3em;
+    line-height: 3.4em;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+
+    color: #FFFFFF;
+}
+
+
+.title-text{
+    width: 80%;
+    height: 100%;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 2em;
+    line-height: 1em;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+
+    color: #FFFFFF;
+}
+.info-text{
+    width: 80%;
+    height: 100%;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 1em;
+    line-height: 1.1em;
+    display: flex;
+    align-items: center;
+    text-align: left;
+    margin-left: auto;
+    margin-right: auto;
+
+    color: #FFFFFF;
+}
+
+.dropdown{
+    border:none;
+    background-color: #DE1918;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 2em;
+    line-height: 1.1em;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+
+    overflow: auto;
+
+    color: #FFFFFF;
+}

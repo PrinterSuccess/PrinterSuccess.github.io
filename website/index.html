@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="./script.js"></script>
+    <title>3D-success</title>
+</head>
+<body>
+    <div id="start-page">
+        <div class="title-card">
+            <span class="title-text">
+                Hur blev din print?
+            </span>
+        </div>
+        <button class="option-card" style="height: 30vh" onclick="showPage('printer-page')">
+            <span class="option-text">
+                Bra
+            </span>
+        </button>
+        <button class="option-card" style="height: 30vh" onclick="showPage('printer-page')">
+            <span class="option-text">
+                Oanvändbar
+            </span>
+        </button>
+    </div>
+    <div id="printer-page">
+        <div class="title-card">
+            <span class="title-text">
+                Vilken typ av printer använde du?
+            </span>
+        </div>
+        <button class="option-card" style="height: 30vh" onclick="showPage('printer-id-page')">
+            <span class="option-text">
+                Finder
+            </span>
+        </button>
+        <button class="option-card" style="height: 30vh" onclick="showPage('printer-id-page')">
+            <span class="option-text">
+                Adventurer
+            </span>
+        </button>
+
+    </div>
+    <div id="printer-id-page">
+        <div class="title-card">
+            <span class="title-text">
+                Vad var printer nummeret?
+            </span>
+        </div>
+        <div class="option-card" style="height: 20vh">
+            <select class="dropdown" name="nr" id="printer-id">
+                <option value="volvo">Volvo</option>
+                <option value="saab">Saab</option>
+                <option value="mercedes">Mercedes</option>
+                <option value="audi">Audi</option>
+            </select>
+        </div>
+        <button class="option-card" style="height: 15vh" onclick="dataDromDroppDown('printer-id', 'fail-page')">
+            <span class="option-text">
+                Bekräfta
+            </span>
+        </button>
+        <button class="option-card" style="height: 20vh" onclick="showPage('fail-page')">
+            <span class="option-text">
+                Minns ej
+            </span>
+        </button>
+    </div>
+    <div id="fail-page">
+        <div class="title-card">
+            <span class="title-text">
+                Varför gick det dåligt?
+            </span>
+        </div>
+        <div class="option-card" style="height: 20vh">
+            <select class="dropdown" name="Anledning" id="fail-reason">
+            </select>
+        </div>
+        <button class="option-card" style="height: 15vh" onclick="dataDromDroppDown('fail-reason', 'help-page')">
+            <span class="option-text">
+                Bekräfta
+            </span>
+        </button>
+        <button class="option-card" style="height: 20vh" onclick="showPage('help-page')">
+            <span class="option-text">
+                Vet ej
+            </span>
+        </button>
+    </div>
+    <div id="help-page">
+        <div class="title-card">
+            <span class="title-text">
+                Vill du bli bättre på att printa?
+            </span>
+        </div>
+        <button class="option-card" style="height: 30vh" onclick="showPage('info-page')">
+            <span class="option-text">
+                Ja
+            </span>
+        </button>
+        <button class="option-card" style="height: 30vh" onclick="showPage('end-page')">
+            <span class="option-text">
+                Nej
+            </span>
+        </button>
+    </div>
+    <div id="info-page">
+        <div class="title-card" style="height: 65vh">
+            <span class="title-text">
+                För att undvika x
+            </span>
+        </div>
+        <div class="info-card">
+            <span class="info-text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum aspernatur laboriosam dolores repellat nesciunt. Eum, quidem. Nemo, alias cumque excepturi natus blanditiis, unde ab aspernatur, nam modi veritatis repellat enim.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus quibusdam, ratione amet commodi culpa dolor in. Voluptatum adipisci omnis rem eum! Minima quos corrupti tempora fugit a ea, unde voluptas.
+            </span>
+        </div>
+        <button class="option-card" style="height: 15vh" onclick="showPage('end-page')">
+            <span class="option-text">
+                Gå vidare
+            </span>
+        </button>
+    </div>
+    <div id="end-page">
+        <div class="title-card">
+            <span class="title-text">
+                Tack för ditt svar
+            </span>
+        </div>
+        <div class="title-card" style="height: 65vh">
+            <span class="title-text">
+                Ha en bra dag och lyckade prints!
+            </span>
+        </div>
+    </div>
+</body>
+</html>
