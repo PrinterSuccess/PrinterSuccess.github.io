@@ -32,10 +32,10 @@ let finders = [
 ]
 
 let form = {
-    printer: null,
-    printerNr: null,
-    success: null,
-    reason: null
+    "printer": null,
+    "printerNr": null,
+    "success": null,
+    "reason": null
 }
 
 function showPage(selected){
