@@ -15,12 +15,12 @@
                 Hur blev din print?
             </span>
         </div>
-        <button class="option-card" style="height: 30vh" onclick="showPage('printer-page')">
+        <button class="option-card" style="height: 30vh" onclick="addData(true,'printer-page', 'success')">
             <span class="option-text">
                 Bra
             </span>
         </button>
-        <button class="option-card" style="height: 30vh" onclick="showPage('printer-page')">
+        <button class="option-card" style="height: 30vh" onclick="addData(false,'printer-page', 'success')">
             <span class="option-text">
                 Oanvändbar
             </span>
@@ -32,12 +32,12 @@
                 Vilken typ av printer använde du?
             </span>
         </div>
-        <button class="option-card" style="height: 30vh" onclick="showPage('printer-id-page')">
+        <button class="option-card" style="height: 30vh" onclick="showPage('printer-id-page'); selectPrinterType('Finder');">
             <span class="option-text">
                 Finder
             </span>
         </button>
-        <button class="option-card" style="height: 30vh" onclick="showPage('printer-id-page')">
+        <button class="option-card" style="height: 30vh" onclick="showPage('printer-id-page');selectPrinterType('Adventurer');">
             <span class="option-text">
                 Adventurer
             </span>
@@ -52,13 +52,9 @@
         </div>
         <div class="option-card" style="height: 20vh">
             <select class="dropdown" name="nr" id="printer-id">
-                <option value="volvo">Volvo</option>
-                <option value="saab">Saab</option>
-                <option value="mercedes">Mercedes</option>
-                <option value="audi">Audi</option>
             </select>
         </div>
-        <button class="option-card" style="height: 15vh" onclick="dataDromDroppDown('printer-id', 'fail-page')">
+        <button class="option-card" style="height: 15vh" onclick="dataFromDroppDown('printer-id', 'fail-page', 'printerNr')">
             <span class="option-text">
                 Bekräfta
             </span>
@@ -79,7 +75,7 @@
             <select class="dropdown" name="Anledning" id="fail-reason">
             </select>
         </div>
-        <button class="option-card" style="height: 15vh" onclick="dataDromDroppDown('fail-reason', 'help-page')">
+        <button class="option-card" style="height: 15vh" onclick="dataFromDroppDown('fail-reason', 'help-page', 'reason')">
             <span class="option-text">
                 Bekräfta
             </span>
@@ -96,24 +92,24 @@
                 Vill du bli bättre på att printa?
             </span>
         </div>
-        <button class="option-card" style="height: 30vh" onclick="showPage('info-page')">
+        <button class="option-card" style="height: 30vh" onclick="showPage('info-page');">
             <span class="option-text">
                 Ja
             </span>
         </button>
-        <button class="option-card" style="height: 30vh" onclick="showPage('end-page')">
+        <button class="option-card" style="height: 30vh" onclick="showPage('end-page');">
             <span class="option-text">
                 Nej
             </span>
         </button>
     </div>
     <div id="info-page">
-        <div class="title-card" style="height: 65vh">
+        <div class="title-card" >
             <span class="title-text">
                 För att undvika x
             </span>
         </div>
-        <div class="info-card">
+        <div class="info-card" style="height: 45vh">
             <span class="info-text">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum aspernatur laboriosam dolores repellat nesciunt. Eum, quidem. Nemo, alias cumque excepturi natus blanditiis, unde ab aspernatur, nam modi veritatis repellat enim.
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus quibusdam, ratione amet commodi culpa dolor in. Voluptatum adipisci omnis rem eum! Minima quos corrupti tempora fugit a ea, unde voluptas.
