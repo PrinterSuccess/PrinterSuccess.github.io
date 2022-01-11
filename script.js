@@ -44,9 +44,9 @@ function showPage(selected){
         fetch("https://printer-success-api.herokuapp.com/", 
             {method:"POST",
             headers: {
-                'Content-Type': 'json'
+                'Content-Type': 'application/json'
             },
-            body: JSON.stringify(form)
+            body: {"printer": form.printer, "printerNr": form.printerNr, "success": form.success, "reason": form.reason}
             })
     }
     pages.forEach(page => {
