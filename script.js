@@ -43,7 +43,7 @@ function showPage(selected){
         console.log(form)
         fetch("https://printer-success-api.herokuapp.com/", 
             {method:"POST",
-            body: form  
+            body: JSON.stringify(form)
             })
     }
     pages.forEach(page => {
