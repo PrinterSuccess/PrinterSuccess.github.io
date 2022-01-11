@@ -46,7 +46,7 @@ function showPage(selected){
             headers: {
                 'Content-Type': 'application/json'
             },
-            body: {"printer": form.printer, "printerNr": form.printerNr, "success": form.success, "reason": form.reason}
+            body: JSON.stringify({"printer": form.printer, "printerNr": form.printerNr, "success": form.success, "reason": form.reason})
             })
     }
     pages.forEach(page => {
