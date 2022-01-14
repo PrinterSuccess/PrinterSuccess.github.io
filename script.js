@@ -20,8 +20,11 @@ let failReasons = [
 	'Printade inte klart',
 	'Ojämn printyta',
 	'Dålig fil',
-	'Bräcklig print'
+	'Bräcklig print',
+    'Gick sönder i lossning från plattan'
 ]
+
+var helpMessages = require('./helpMessages.json');
 
 let adventurers = [
     1, 2, 3, 4, 5
@@ -42,6 +45,9 @@ function showPage(selected){
     if (selected == "fail-page" && form.success == true){
         selected = "end-page"
     } 
+    if (selected == "help-page" && form.reason == null) {
+        selected = "end-page"
+    } 
     if(selected == 'end-page'){
         console.log(form)
         fetch("https://printer-success-api.herokuapp.com/", 
@@ -51,6 +57,10 @@ function showPage(selected){
             },
             body: JSON.stringify({"printer": form.printer, "printerNr": form.printerNr, "success": form.success, "reason": form.reason})
             })
+    }
+    if(selected == "info-page"){
+        document.getElementById("help-title").innerText = "För att undvika " + form.reason
+        document.getElementById("help-text").innerText = helpMessages[form.reason]
     }
     pages.forEach(page => {
         document.getElementById(page).style.display = "none"
