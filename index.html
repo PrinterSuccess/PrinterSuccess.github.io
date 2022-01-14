@@ -15,14 +15,33 @@
                 Hur blev din print?
             </span>
         </div>
-        <button class="option-card" style="height: 30vh" onclick="addData(true,'printer-page', 'success')">
+        <button class="option-card" style="height: 30vh" onclick="addData(true,'location-page', 'success')">
             <span class="option-text">
                 Bra
             </span>
         </button>
-        <button class="option-card" style="height: 30vh" onclick="addData(false,'printer-page', 'success')">
+        <button class="option-card" style="height: 30vh" onclick="addData(false,'location-page', 'success')">
             <span class="option-text">
                 Oanvändbar
+            </span>
+        </button>
+    </div>
+    <div id="location-page">
+        <div class="title-card">
+            <span class="title-text">
+                Vilken lokal står printern i?
+            </span>
+        </div>
+        <button class="option-card" style="height: 30vh"
+            onclick=" selectLocation('produktion'); showPage('printer-page');">
+            <span class="option-text">
+                Produktion
+            </span>
+        </button>
+        <button class="option-card" style="height: 30vh"
+            onclick="selectLocation('spets');showPage('printer-page');">
+            <span class="option-text">
+                Spets
             </span>
         </button>
     </div>
@@ -42,7 +61,6 @@
                 Adventurer
             </span>
         </button>
-
     </div>
     <div id="printer-id-page">
         <div class="title-card">
