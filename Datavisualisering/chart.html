@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="sv">
+    <link rel="stylesheet" href="../style.css">
+<body>
+
+<form action="/action_page.php" class="form">
+    <label for="timeSpan" class="title-text">Välj tidsspann</label>
+    <select name="timeSpan" id="timeSpan" class="dropdown">
+        <option value="dag">dag</option>
+        <option value="vecka">vecka</option>
+        <option value="månad">månad</option>
+        <option value="år">år</option>
+    </select>
+    <br>
+
+    <label for="info" class="title-text">Välj information</label>
+    <select name="info" id="info" class="dropdown">
+        <option value="misslykcade">misslykcande</option>
+        <option value="fel">fel</option>
+    </select>
+    <br>
+
+    <label for="printer" class="title-text">Välj printer</label>
+    <select name="printer" id="printer" class="dropdown">
+        <option value="alla">alla</option>
+        <option value="adventurer">adventurer</option>
+        <option value="finder">finder</option>
+    </select>
+    <br>
+
+    <label for="printerNr">Välj printer nummer</label>
+    <select name="printerNr" id="printerNr" class="dropdown">
+        <option value="alla">alla</option>
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+    </select>
+    <br><br>
+    <input type="submit" value="Uppdatera">
+</form>
+
+<div id="bar-chart"></div>
+
+</body>
+</html>
+
+<!-- https://developers.google.com/chart/interactive/docs/quick_start -->
+<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+<script type="text/javascript" src="chartScript.js"></script>
