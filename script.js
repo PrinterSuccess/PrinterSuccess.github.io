@@ -39,6 +39,9 @@ let form = {
 }
 
 function showPage(selected){
+    if (selected == "fail-page" && form.success == true){
+        selected = "end-page"
+    } 
     if(selected == 'end-page'){
         console.log(form)
         fetch("https://printer-success-api.herokuapp.com/", 
