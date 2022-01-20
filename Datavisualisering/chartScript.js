@@ -10,9 +10,10 @@ const barChart = {
     ],
     element: '#bar-chart',
     options:  {
-      title: '2019 Units Sold',
-      width: 500,
-      height: 300
+      title: 'Printer Success',
+      width: 1000,
+      height: 800,
+      colors: ['#FE1925']
     }
   };
    // https://developers.google.com/chart/interactive/docs/gallery/piechart

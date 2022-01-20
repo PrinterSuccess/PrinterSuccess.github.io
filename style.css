@@ -122,5 +122,35 @@
 }
 
 .form{
+    background-color: #ffffff;
+}
+
+.options{
+    border:none;
     background-color: #DE1918;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 2em;
+    line-height: 1.1em;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5px;
+    margin-bottom: 5px;
+
+    overflow: auto;
+
+    color: #FFFFFF;
+}
+
+.label{
+    text-align: center;
+}
+
+#bar-chart{
+    color: #DE1918;
+    align-items: center;
 }
