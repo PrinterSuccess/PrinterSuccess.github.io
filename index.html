@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="https://assets.website-files.com/5fa3d33b60895f149eb58ef8/60db17b5fbccbf1b87655ee5_abb_favicon.png">
     <script src="./script.js"></script>
     <title>3D-success</title>
 </head>
@@ -15,14 +16,33 @@
                 Hur blev din print?
             </span>
         </div>
-        <button class="option-card" style="height: 30vh" onclick="addData(true,'printer-page', 'success')">
+        <button class="option-card" style="height: 30vh" onclick="addData(true,'location-page', 'success')">
             <span class="option-text">
                 Bra
             </span>
         </button>
-        <button class="option-card" style="height: 30vh" onclick="addData(false,'printer-page', 'success')">
+        <button class="option-card" style="height: 30vh" onclick="addData(false,'location-page', 'success')">
             <span class="option-text">
                 Oanvändbar
+            </span>
+        </button>
+    </div>
+    <div id="location-page">
+        <div class="title-card">
+            <span class="title-text">
+                Vilken lokal står printern i?
+            </span>
+        </div>
+        <button class="option-card" style="height: 30vh"
+            onclick=" selectLocation('produktion'); showPage('printer-page');">
+            <span class="option-text">
+                Produktion
+            </span>
+        </button>
+        <button class="option-card" style="height: 30vh"
+            onclick="selectLocation('spets');showPage('printer-page');">
+            <span class="option-text">
+                Spets
             </span>
         </button>
     </div>
@@ -42,7 +62,6 @@
                 Adventurer
             </span>
         </button>
-
     </div>
     <div id="printer-id-page">
         <div class="title-card">
@@ -105,12 +124,12 @@
     </div>
     <div id="info-page">
         <div class="title-card" >
-            <span class="title-text">
+            <span class="title-text" id="help-title">
                 För att undvika x
             </span>
         </div>
         <div class="info-card" style="height: 45vh">
-            <span class="info-text">
+            <span class="info-text" id="help-text">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum aspernatur laboriosam dolores repellat nesciunt. Eum, quidem. Nemo, alias cumque excepturi natus blanditiis, unde ab aspernatur, nam modi veritatis repellat enim.
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus quibusdam, ratione amet commodi culpa dolor in. Voluptatum adipisci omnis rem eum! Minima quos corrupti tempora fugit a ea, unde voluptas.
             </span>
