@@ -1,3 +1,7 @@
+function updateChart(){
+  console.log("updatingChart")
+}
+
 const barChart = {
     chart: null,
     data: [
@@ -13,7 +17,7 @@ const barChart = {
       title: 'Printer Success',
       width: 1000,
       height: 800,
-      colors: ['#FE1925']
+      colors: ['#FE1925'],
     }
   };
    // https://developers.google.com/chart/interactive/docs/gallery/piechart
@@ -24,7 +28,7 @@ const barChart = {
   const init = () => {
    
     
-    barChart.chart = new google.visualization.BarChart(
+    barChart.chart = new google.visualization.ColumnChart(
       document.querySelector(barChart.element)
     );
     barChart.chart.draw(
@@ -57,3 +61,4 @@ const barChart = {
       barChart.options
     );
   });*/
+
